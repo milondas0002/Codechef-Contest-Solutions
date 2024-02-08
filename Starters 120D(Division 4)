@@ -1,0 +1,65 @@
+Problem 1: https://www.codechef.com/problems/VAL114
+Problem 2: https://www.codechef.com/problems/VAL142
+Problem 4: https://www.codechef.com/problems/ASM120
+Solution 1: 
+#include <bits/stdc++.h>
+using namespace std;
+
+int main() {
+	// your code goes here
+	int n;
+	cin >> n;
+	if(n==121) cout << "Likely";
+	else cout << "Unlikely";
+	return 0;
+}
+
+Solution 2: 
+#include <bits/stdc++.h>
+
+using namespace std;
+
+int main() {
+    int T;
+    cin >> T;
+
+    while (T--) {
+        long long X;
+        cin >> X;
+        long long gift_value = 1;
+        bool possible = true;
+
+        for (int i = 0; i < 7; ++i) {
+            if (X >= gift_value) {
+                X -= gift_value;
+                gift_value *= 2;
+            } else {
+                possible = false;
+                break;
+            }
+        }
+
+        if (possible) {
+            cout << "YES\n";
+        } else {
+            cout << "NO\n";
+        }
+    }
+
+    return 0;
+}
+
+Solution 4: 
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+{
+    int t, x, y;
+    cin >> t;
+    while(t--)
+    {
+        cin >> x >> y;
+        cout << __gcd(x, y) << endl;
+    }
+    return 0;
+}
