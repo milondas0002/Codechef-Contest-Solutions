@@ -1,5 +1,6 @@
 Problem 1: https://www.codechef.com/problems/VAL114
 Problem 2: https://www.codechef.com/problems/VAL142
+Problem 3: https://www.codechef.com/problems/LARGESTK343
 Problem 4: https://www.codechef.com/problems/ASM120
 Solution 1: 
 #include <bits/stdc++.h>
@@ -47,6 +48,23 @@ int main() {
     }
 
     return 0;
+}
+
+Solution 3:
+#include <bits/stdc++.h>
+using namespace std;
+
+int main() {
+	// your code goes here
+	int t;
+	cin >> t;
+	while(t--)
+	{
+	    int x, y;
+	    cin >> x >> y;
+	    cout << y/(x-1) << endl;
+	}
+	return 0;
 }
 
 Solution 4: 
